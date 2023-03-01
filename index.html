@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="style.css" rel="stylesheet">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+    <!-- END Font -->
+    <title>Bug Tracker</title>
+    <script src="./script/login.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Bug Tracker</h1>
+    </header>
+    <main>
+        <section id="login">
+            <form id="login-form" action="get">
+                <h2>Log In</h2>
+                <div class="input-container">
+                    <label for="name">Name</label>
+                    <input id="name" type="text">
+                </div>
+                <div class="input-container">
+                    <label for="password">Password</label>
+                    <input id="password" type="password">
+                </div>
+                <p class="error-msg"></p>
+                <p>Create a <a href="./pages/signup.html"><u>new account ?</u></a></p>
+                <button type="submit">Log In</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
