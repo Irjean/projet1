@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link  href="../style.css" rel="stylesheet">
+    <link  href="../styles/addbug.css" rel="stylesheet">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+    <!-- END Font -->
+    <title>Bug Tracker</title>
+    <script src="../script/addbug.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <h1>Bug Tracker</h1>
+    </header>
+    <main>
+        <section id="new-bug-section">
+            <h2>Add a new bug</h2>
+            <form action="post" id="new-bug-form">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" required>
+                <label for="desc">Description</label>
+                <textarea name="desc" id="desc" cols="30" rows="10" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <a href="./buglist.html">Back</a>
+        </section>
+    </main>
 </body>
 </html>

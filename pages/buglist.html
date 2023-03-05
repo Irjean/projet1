@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  href="../style.css" rel="stylesheet">
+    <link  href="../styles/buglist.css" rel="stylesheet">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +19,42 @@
         <h1>Bug Tracker</h1>
     </header>
     <main>
-        
+        <div class="popup-container">
+            <div class="popup">
+                <p>This bug will be deleted permanantly, do you wish to continue ?</p>
+                <div class="btn-container">
+                    <button class="yes-btn">Yes</button>
+                    <button class="no-btn">No</button>
+                </div>
+            </div>
+        </div>
+        <section id="buglist">
+            <h2>List of bugs</h2>
+            <div>
+                <button class="disconnect-btn">disconnect</button>
+                <a href="./addbug.html">Add a new bug</a>
+            </div>
+            <div>
+                <label for="all-bugs">See all bugs</label>
+                <input type="radio" name="list" id="all-bugs" checked>
+                <label for="user-bugs">See my bugs</label>
+                <input type="radio" name="list" id="user-bugs">
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="th-bug">Bug</th>
+                        <th class="th-date">Date</th>
+                        <th class="th-name">Name</th>
+                        <th class="th-state">State</th>
+                        <th class="th-del">Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="buglist-body">
+                    
+                </tbody>
+            </table>
+        </section>
     </main>
 </body>
 </html>

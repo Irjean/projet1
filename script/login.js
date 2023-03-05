@@ -1,3 +1,9 @@
+window.onload = () => {
+    if(sessionStorage.getItem("token")){
+        window.location = "../pages/buglist.html";
+    }
+}
+
 const form = document.forms["login-form"];
 
 function signUp(e) {

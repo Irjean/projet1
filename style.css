@@ -38,6 +38,8 @@ main{
 #login-form{
     width: 20%;
     height: 30%;
+    min-width: 200px;
+    min-height: 250px;
     background-color: rgb(68, 67, 67);
     border: 1px solid #000;
     border-radius: 10px;
@@ -50,6 +52,8 @@ main{
 #signup-form{
     width: 20%;
     height: 40%;
+    min-width: 200px;
+    min-height: 250px;
     background-color: rgb(68, 67, 67);
     border: 1px solid #000;
     border-radius: 10px;
@@ -69,7 +73,7 @@ input{
     color: black;
 }
 
-button{
+form button{
     margin-top: 10px;
     color: white;
     background-color: rgb(98, 98, 204);
@@ -80,7 +84,7 @@ button{
     transition: 0.2s;
 }
 
-button:hover{
+form button:hover{
     scale: 1.1;
     background-color: rgb(75, 75, 153);
 }

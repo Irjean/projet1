@@ -1,0 +1,25 @@
+#new-bug-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#new-bug-form{
+    display: flex;
+    flex-direction: column;
+}
+
+#new-bug-form textarea{
+    color: black;
+}
+
+.back-btn{
+    margin-top: 10px;
+    color: white;
+    background-color: rgb(69, 69, 153);
+    border: 1px solid rgb(34, 34, 34, 0);
+    border-radius: 10px;
+    padding: 5px 30px 5px 30px;
+    cursor: pointer;
+    transition: 0.2s;
+}

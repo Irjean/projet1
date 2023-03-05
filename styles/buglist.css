@@ -1,0 +1,161 @@
+#buglist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+select, option{
+    color: black;
+}
+
+table{
+    border-spacing: 0;
+    min-width: 765px;
+    width: 70%;
+    table-layout: fixed;
+}
+
+td, th{
+    border: 1px solid black;
+}
+
+th{
+    background-color: rgb(17, 17, 17);
+}
+
+td{
+    background-color: rgb(78, 78, 78);
+    padding-left: 5px;
+    width: 30%;
+}
+
+.bug-desc{
+    width: 100px;
+}
+
+.bug-desc h3{
+    width: 100%;
+}
+
+.bug-desc p{
+    max-height: 50px;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.bug-date{
+    width: 10%;
+}
+
+.bug-name{
+    width: 10%;
+}
+
+.bug-state{
+    width: 10%
+}
+
+.bug-state select, .bug-state select option{
+    cursor: pointer;
+}
+
+.bug-del{
+    width: 5%;
+    padding: 0;
+    position: relative;
+}
+
+.del-button{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgb(158, 6, 6);
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    border: none;
+    cursor: pointer;
+}
+
+.del-button:hover{
+    background-color: rgb(124, 0, 0);
+}
+
+.del-button img{
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-48%, -50%);
+}
+
+.th-bug{
+    width: 50%;
+}
+
+.popup-container{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.671);
+    top: 0;
+    z-index: 1;
+}
+
+.popup{
+    background-color: rgb(58, 58, 58);
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.yes-btn, .no-btn{
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.yes-btn{
+    background-color: green;
+    cursor: pointer;
+}
+
+.yes-btn:hover{
+    background-color: rgb(0, 87, 0);
+}
+
+.no-btn{
+    background-color: red;
+    cursor: pointer;
+}
+
+.no-btn:hover{
+    background-color: rgb(107, 0, 0);
+}
+
+.show{
+    display: flex;
+}
+
+.disconnect-btn{
+    background-color: rgb(192, 48, 48);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.disconnect-btn:hover{
+    background-color: rgb(124, 30, 30);
+}
